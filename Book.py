@@ -49,7 +49,7 @@ class Book:
         self.Set_SaleBook(value_SaleBook)
     def Output_Information(self):
         sale = self.Get_PriceBook() - self.Get_SaleBook()
-        return f" -ID of book: {self.Get_BookID()} \n -Name of book: {self.Get_NameBook()} \n -Price of book: {self.Get_PriceBook()}VND \n -Sale of book: {self.Get_SaleBook()}VND \n -Total: {sale}VND"
+        return f" - ID of book: {self.Get_BookID()} \n - Name of book: {self.Get_NameBook()} \n - Price of book: {self.Get_PriceBook()}VND \n -Sale of book: {self.Get_SaleBook()}VND \n -Total: {sale}VND"
     def Update_Information(self):
         self.Input_Information()
 print("Information current:")
