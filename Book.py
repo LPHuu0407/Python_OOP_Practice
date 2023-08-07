@@ -2,8 +2,6 @@ class Book:
     #Constructor, Fields
     def __init__(self, bookID: str = "" , nameBook: str = "", priceBook: float = 0, saleBook: float = 0):
         # Validations
-        assert priceBook >= 0, f"Error of <priceBook> !"
-        assert saleBook >= 0, f"Error of <saleBook> !"
         # Assign to self object
         self.BookID = bookID
         self.NameBook = nameBook
