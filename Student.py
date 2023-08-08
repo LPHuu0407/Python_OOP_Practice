@@ -40,6 +40,3 @@ class Student:
     def Ouput_Information(self):
         Age = 2023 - self.Get_Year_of_Birth()
         return f"- Your ID: {self.Get_StudentID()} \n- Your full name: {self.Get_Full_Name()} \n- Your year of birth: {self.Get_Year_of_Birth()} \n- Your location: {self.Get_Location()} \n- Your age: {Age}"
-Instance_Student_1 = Student()
-Instance_Student_1.Input_Information()
-print(Instance_Student_1.Ouput_Information())

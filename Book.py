@@ -50,10 +50,3 @@ class Book:
         return f" - ID of the book: {self.Get_BookID()} \n - Name of the book: {self.Get_NameBook()} \n - Price of the book: {self.Get_PriceBook()}VND \n -Sale of the book: {self.Get_SaleBook()}VND \n -Total: {sale}VND"
     def Update_Information(self):
         self.Input_Information()
-print("Information current:")
-Book_Item = Book()
-Book_Item.Input_Information()
-print(Book_Item.Output_Information())
-Book_Item.Update_Information()
-print("Information after update:")
-print(Book_Item.Output_Information())

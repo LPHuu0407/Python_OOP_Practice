@@ -1,4 +1,4 @@
-class Acount:
+class Account:
     # Constructor, Fields
     def __init__(self, Balance: float = 1, Id: str = "***", Af_Balance: float = 0):
         # Run validations to the received argument
@@ -29,7 +29,3 @@ class Acount:
         Update_Balance = float(input("Enter update balance: "))
         self.Set_Balance(self.Get_Balance() + Update_Balance)
         return f" - Your id: {self.Get_Id()} \n - Your balance: {self.Get_Balance()}VND"
-Acount_Object = Acount()
-Acount_Object.Input_Balance_Id()
-print(Acount_Object.Output_Balance_Id())
-print(Acount_Object.Update_Balance())
