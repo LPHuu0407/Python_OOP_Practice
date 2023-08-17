@@ -30,10 +30,3 @@ class Circle:
         print(f"{self.number_of_Circle} radius entered:")
         for i in range(0, self.number_of_Circle):
             print(self.Circle_Array[i])
-    
-    
-    
-    # def Area_of_Circle(self):
-    #     return f" - Area of the circle: {math.pi * self.Get_r() ** 2}"
-    # def Perimeter_of_Circle(self):
-    #     return f" - Perimeter of the circle: {2 * math.pi * self.Get_r()}"
