@@ -22,11 +22,13 @@ class Circle:
             for i in range(0, self.number_of_Circle):
                 self.Set_r(float(input(f"Enter value of radius {i + 1}: ")))
                 self.Circle_Array.append(self.Get_r())
-                print(f"Radius recent input {i + 1}: {self.Circle_Array[i]}")
+                print(f" - Radius recent input: {self.Circle_Array[i]}")
         else:
             print("Number of the circle isn't less than 0!")
-        print(f"{self.number_of_Circle} circles entered:")
     def Output_r(self):
         print(f"{self.number_of_Circle} radius entered:")
         for i in range(0, self.number_of_Circle):
-            print(self.Circle_Array[i])
+            print(f" - Radius: {self.Circle_Array[i]}")
+Cir = Circle()
+Cir.Input_r()
+Cir.Output_r()
