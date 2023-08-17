@@ -16,23 +16,24 @@ class Circle:
         else:
             self.r = Value
     def Input_r(self):
-        number_of_Circle = int(input("Enter number of the circle: "))
-        Circle_Array = Arr.array('f', [])
-        if number_of_Circle >= 1:
-            for i in range(0, number_of_Circle):
+        self.number_of_Circle = int(input("Enter number of the circle: "))
+        self.Circle_Array = Arr.array('f', [])
+        if self.number_of_Circle >= 1:
+            for i in range(0, self.number_of_Circle):
                 self.Set_r(float(input(f"Enter value of radius {i + 1}: ")))
-                Circle_Array.append(self.Get_r())
-                print(f"Radius recent input {i + 1}: {Circle_Array[i]}")
+                self.Circle_Array.append(self.Get_r())
+                print(f"Radius recent input {i + 1}: {self.Circle_Array[i]}")
         else:
             print("Number of the circle isn't less than 0!")
-
-
-
-
-        
+        print(f"{self.number_of_Circle} circles entered:")
     def Output_r(self):
-        return f" - Radius of the circle: {self.Get_r()}"
-    def Area_of_Circle(self):
-        return f" - Area of the circle: {math.pi * self.Get_r() ** 2}"
-    def Perimeter_of_Circle(self):
-        return f" - Perimeter of the circle: {2 * math.pi * self.Get_r()}"
+        print(f"{self.number_of_Circle} radius entered:")
+        for i in range(0, self.number_of_Circle):
+            print(self.Circle_Array[i])
+    
+    
+    
+    # def Area_of_Circle(self):
+    #     return f" - Area of the circle: {math.pi * self.Get_r() ** 2}"
+    # def Perimeter_of_Circle(self):
+    #     return f" - Perimeter of the circle: {2 * math.pi * self.Get_r()}"
