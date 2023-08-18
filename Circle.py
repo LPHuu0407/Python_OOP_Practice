@@ -30,11 +30,14 @@ class Circle:
         for i in range(0, self.number_of_Circle):
             print(f" - Radius: {self.Circle_Array[i]} cm")
     def Area(self):
+        self.Array_Area = Arr.array('f', [])
         print(f"Area of {self.number_of_Circle} circles:")
         for i in range(0, self.number_of_Circle):
             self.Area_Circle = math.pi * self.Circle_Array[i] ** 2
+            self.Array_Area.append(self.Area_Circle)
             print(f" - Area circle {i + 1}: {self.Area_Circle} cm2")
 Cir = Circle()
 Cir.Input_r()
 Cir.Output_r()
 Cir.Area()
+Cir.Largest_Area()
